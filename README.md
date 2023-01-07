@@ -4,6 +4,7 @@ Arduino Network Tester, extends the functionality of  the well-known Network Cab
   <img src="/images/render.jpg">
 </p>
 ## How it works
+
 When turned on, the Power LED is ON and the Status LED is blinking, until you connect an RJ45 (Ethernet Cable) from an <a href="https://en.wikipedia.org/wiki/OSI_model">OSI Layer 3</a> device (e.g. router) to the W5500 ethernet port. After that, the device runs the tests one by one starting with DHCP where it requests an IP address. If it successfully receive one then the DHCP LED lights. Next it tries to resolve the url www.example.com to the appropriate IP, if it is successful then the DNS LED lights up. Finally it makes an HTTP request to the domain www.example.com and parse the result. If the returned <a href="https://httpstatuses.com/">HTTP Status Code</a> equals 200 then the Internet Connectivity LED turns on.
 
 ## Bill of Materials
